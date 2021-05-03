@@ -13,9 +13,9 @@ all	: bin/mps
 	@echo -n ""
 
 # optimized version
-bin/mps			: main_opt.o lib
+bin/mps			: main_opt.o
 			$(CC) $(OPTFLAGS) main_opt.o -o bin/mps
-main_opt.o 	   	: src/main.cpp lib/tm_usage.h
+main_opt.o 	   	: src/main.cpp
 			$(CC) $(CFLAGS) $< -o $@
 
 # DEBUG Version
