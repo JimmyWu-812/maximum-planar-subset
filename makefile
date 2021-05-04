@@ -17,6 +17,10 @@ bin/mps			: main_opt.o
 			$(CC) $(OPTFLAGS) main_opt.o -o bin/mps
 main_opt.o 	   	: src/main.cpp
 			$(CC) $(CFLAGS) $< -o $@
+# bin/mps2			: test_opt.o
+# 			$(CC) $(OPTFLAGS) test_opt.o -o bin/mps2
+# test_opt.o 	   	: src/test.cpp
+# 			$(CC) $(CFLAGS) $< -o $@
 
 # DEBUG Version
 # dbg : bin/NTU_sort_dbg
